@@ -15,7 +15,7 @@ namespace TicketClassLibrary
         public DateTime Date { get; set; }
 
 
-        /// Returnerer den faste pris for at krydse broen.
+        /// Returnerer den faste pris for at krydse broenn.
         
         public double Price()
         {
