@@ -22,7 +22,7 @@ namespace TicketClassLibrary
             return 240;
         }
 
-        /// Returnerer typen af køretøjet.
+        /// Returnerer typen af køretøjett.
        
         public string VehicleType()
         {
