@@ -1,36 +1,18 @@
+using TicketClassLibrary;
 
-namespace TicketClassLibrary
+public class MC : Vehicle
 {
-
-    /// Repræsenterer en motorcykel (MC) med et nummerplade og en dato.
-
-    public class MC
+    /// Returnerer den faste pris for at krydse broen for en motorcykel.
+    /// <returns>Prisen for motorcyklens passage, som altid er 125.</returns>
+    public override double Price()
     {
-     
-        /// Får eller sætter nummerpladen for motorcyklen.
+        return 125;
+    }
 
-        public string Licenseplate { get; set; }
-
- 
-        /// Får eller sætter datoen knyttet til motorcyklen.
-
-        public DateTime Date { get; set; }
-
-
-        /// Returnerer den faste pris for at krydse broren for en motorcykel.
-
-
-        public double Price()
-        {
-            return 125;
-        }
-
-
-        /// Returnerer typen af køretøjet.
-        
-        public string VehicleType()
-        {
-            return "MC";
-        }
+    /// Returnerer typen af køretøjet.
+    /// <returns>En streng, der angiver køretøjstypen, som er "MC".</returns>
+    public override string VehicleType()
+    {
+        return "MC";
     }
 }

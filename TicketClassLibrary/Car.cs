@@ -1,30 +1,17 @@
-
 namespace TicketClassLibrary
 {
     /// Repræsenterer en bil med et nummerplade og en dato.
-    public class Car
+    public class Car : Vehicle
     {
-
-        /// Får eller sætter nummerpladen for bilen.
-   
-        public string Licenseplate { get; set; }
-
-
-        /// Får eller sætter datoen knyttet til bilen.
-
-        public DateTime Date { get; set; }
-
-
-        /// Returnerer den faste pris for at krydse broenn.
-        
-        public double Price()
+        /// Returne en faste pris på 240 DKK for at komme over broen.
+        public override double Price()
         {
             return 240;
         }
 
-        /// Returnerer typen af køretøjeett.
-       
-        public string VehicleType()
+        /// Returner en type af køretøjet.
+
+        public override string VehicleType()
         {
             return "Car";
         }
