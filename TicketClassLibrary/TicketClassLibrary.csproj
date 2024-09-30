@@ -1,11 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <DocumentationFile>bin\Debug\net9.0\YourProjectName.xml</DocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\Debug\net9.0\TicketClass Rebin's XML.xml</DocumentationFile>
   </PropertyGroup>
+  
 
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter" Version="3.6.0" />

@@ -33,7 +33,8 @@ namespace TicketClassLibrary
       
         /// Returner priss for at køre ved broen.
    
-        public abstract double Price();
+        /// Returnerer prisen for køretøjet.
+        public abstract double Price(bool useBrobizz = false);
 
         /// Returnerer type af køretøjet.
     

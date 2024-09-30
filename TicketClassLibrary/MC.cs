@@ -3,10 +3,14 @@ using TicketClassLibrary;
 public class MC : Vehicle
 {
     /// Returnerer den faste pris for at krydse broen for en motorcykel.
-    /// <returns>Prisen for motorcyklens passage, som altid er 125.</returns>
-    public override double Price()
+    public override double Price(bool useBrobizz = false)
     {
-        return 125;
+        double price = 125;
+        if (useBrobizz)
+        {
+            price *= 0.95; // 5% discount
+        }
+        return price;
     }
 
     /// Returnerer typen af køretøjet.
