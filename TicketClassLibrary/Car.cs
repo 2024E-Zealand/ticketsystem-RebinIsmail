@@ -22,7 +22,7 @@ namespace TicketClassLibrary
         }
 
         /// <summary>
-        /// Returnerer typen af køretøjet.
+        /// Returnerer typen af køretøjettttt.
         /// </summary>
         /// <returns>Returnerer altid "Car" som typen af køretøjet.</returns>
         public override string VehicleType()
