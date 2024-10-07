@@ -1,22 +1,24 @@
 namespace TicketClassLibrary
 {
-
-
+    /// <summary>
+    /// En abstrakt klasse, der repræsenterer et køretøj.
+    /// </summary>
     public abstract class Vehicle
     {
-   
-     /// sætter nummerpladen for køretøjet.
-      
+        /// <summary>
+        /// Nummerpladen, som ikke må overstige 7 tegn.
+        /// </summary>
         protected string licenseplate;
 
- 
-     /// sætter datoen knyttet til køretøjet.
-        
+        /// <summary>
+        /// Datoen for køretøjet.
+        /// </summary>
         public DateTime Date { get; set; }
 
-      
-        /// En property for licensplate.
-       
+        /// <summary>
+        /// Henter eller sætter nummerpladen og sikrer, at den ikke overstiger 7 tegn.
+        /// </summary>
+        /// <exception cref="ArgumentException">Kastes hvis nummerpladen overstiger 7 tegn.</exception>
         public string Licenseplate
         {
             get => licenseplate;
@@ -28,16 +30,19 @@ namespace TicketClassLibrary
                 }
                 licenseplate = value;
             }
-        }
-
-      
-        /// Returner priss for at køre ved broen.
-   
-        /// Returnerer prisen for køretøjet.
+        }                                                                                                      
+                                                                
+        /// <summary>
+        /// Beregner prisen for at krydse broen.
+        /// </summary>
+        /// <param name="useBrobizz">Angiver, om Brobizz bruges for at få rabat.</param>
+        /// <returns>Prisen for at krydse broen.</returns>
         public abstract double Price(bool useBrobizz = false);
 
-        /// Returnerer type af køretøjet.
-    
+        /// <summary>
+        /// Returnerer køretøjets type.
+        /// </summary>
+        /// <returns>En streng, der angiver køretøjets type.</returns>
         public abstract string VehicleType();
     }
 }

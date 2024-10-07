@@ -1,22 +1,29 @@
-using TicketClassLibrary;
-
-public class MC : Vehicle
+namespace TicketClassLibrary
 {
-    /// Returnerer den faste pris for at krydse broen for en motorcykel.
-    public override double Price(bool useBrobizz = false)
+    /// <summary>
+    /// Vi ser en klasse, som repræsenterer en motorcykel (MC).
+    /// </summary>
+    public class MC : Vehicle
     {
-        double price = 125;
-        if (useBrobizz)
+        /// <summary>
+        /// Vi ser metoden, som returnerer prisen for motorcykler og giver en rabat, hvis Brobizz bruges.
+        /// </summary>
+        public override double Price(bool useBrobizz = false)
         {
-            price *= 0.95; // 5% discount
+            double price = 125;
+            if (useBrobizz)
+            {
+                price *= 0.95; // 5% rabat
+            }
+            return price;
         }
-        return price;
-    }
 
-    /// Returnerer typen af køretøjet.
-    /// <returns>En streng, der angiver køretøjstypen, som er "MC".</returns>
-    public override string VehicleType()
-    {
-        return "MC";
+        /// <summary>
+        /// Vi ser en metode, der returnerer køretøjstypen, som her er "MC".
+        /// </summary>
+        public override string VehicleType()
+        {
+            return "MC";
+        }
     }
 }

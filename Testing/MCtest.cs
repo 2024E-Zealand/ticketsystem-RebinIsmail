@@ -32,4 +32,6 @@ namespace Testing
             Assert.AreEqual("MC", vehicleType);
         }
     }
+
+
 }

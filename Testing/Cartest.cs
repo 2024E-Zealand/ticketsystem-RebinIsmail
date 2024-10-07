@@ -5,7 +5,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Hej Martin. Af en eller anden dum årsag, virker unit test ikke hvis jeg ikke har "Public Static void Main"... Underligt!!! :(
+        /// Hej Martin. Af en eller anden dum årsag, virker unit test ikke hvis jeg ikke har "Public Static void Main"... Underligt!!! :(
     }
 }
 namespace Testing
