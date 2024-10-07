@@ -31,7 +31,24 @@ namespace Testing
             // Assert
             Assert.AreEqual("MC", vehicleType);
         }
+
+
+        [TestMethod]
+        public void TestMCDate()
+        {
+            // Arrange
+            var mc = new MC();
+            DateTime expectedDate = new DateTime(2020, 10, 1);
+
+            // Act
+            mc.Date = expectedDate;
+            DateTime actualDate = mc.Date;
+
+            // Assert
+            Assert.AreEqual(expectedDate, actualDate);
+        }
     }
+
 
 
 }
